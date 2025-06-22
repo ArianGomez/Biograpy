@@ -1,0 +1,63 @@
+<!-- Carrusel de Diseños Responsivos -->
+<div class="carousel-section">
+  <h2>Diseños responsivos y elegantes</h2>
+<link rel="stylesheet" href="DiseñosResponsivos.css">
+  <div class="carousel-container">
+    <div class="carousel-slide active">
+      <img src="ELT.png" alt="Diseño 1">
+    </div>
+    <div class="carousel-slide">
+      <img src="exponencial.png" alt="Diseño 2">
+    </div>
+    <div class="carousel-slide">
+      <img src="Tu web.png" alt="Diseño 3">
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+    <div class="carousel-indicators">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <div class="carousel-description-box">
+    <h3>¿Por qué nuestros diseños?</h3>
+    <p>
+      Cuidamos cada detalle que el cliente nos pide para sus proyectos. Nos encargamos de brindarle la mejor experiencia y comunicación posible, adaptándonos a su visión desde el primer contacto. Valoramos el trabajo en equipo, por lo que si cuentas con un diseñador externo, colaboramos de forma eficiente para que todo encaje perfectamente. Nuestro compromiso es ofrecerte atención personalizada, resultados de alta calidad y la mejor velocidad de entrega posible sin comprometer el diseño ni la funcionalidad.
+    </p>
+  </div>
+</div>
+
+<!-- JavaScript del Carrusel -->
+<script>
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active', i === index);
+    });
+    current = index;
+  }
+
+  next.addEventListener('click', () => {
+    let nextIndex = (current + 1) % slides.length;
+    showSlide(nextIndex);
+  });
+
+  prev.addEventListener('click', () => {
+    let prevIndex = (current - 1 + slides.length) % slides.length;
+    showSlide(prevIndex);
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => showSlide(i));
+  });
+</script>

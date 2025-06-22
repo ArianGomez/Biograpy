@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+}
+
+.header {
+  background-color: #2f3e56;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header img {
+  max-width: 100px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.main {
+  max-width: 700px;
+  background: white;
+  margin: -50px auto 30px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.main p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buttons a {
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #2f3e56;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d283a;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #bbb;
+}
+
+.btn-tertiary {
+  background-color: transparent;
+  color: #2f3e56;
+  border: 2px solid #2f3e56;
+}
+
+.btn-tertiary:hover {
+  background-color: #446191;
+  color: white;
+}
+
+.middle-image {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.middle-image img {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.middle-image img:hover {
+  transform: scale(1.03);
+}

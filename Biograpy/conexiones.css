@@ -1,0 +1,141 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #2f3e56;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header img {
+  max-width: 100px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.main {
+  max-width: 900px;
+  margin: -40px auto 60px;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.tech-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+.tech-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tech-icon {
+  flex-shrink: 0;
+}
+
+.tech-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.tech-text {
+  flex: 1;
+  text-align: left;
+}
+
+.tech-text h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #2f3e56;
+}
+
+.tech-text p {
+  font-size: 16px;
+  color: #444;
+}
+
+.important-card {
+  background-color: #ffe7cc;
+  border-left: 5px solid #e58e26;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.important-card h3 {
+  color: #b85400;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.important-card p {
+  color: #3a2e1f;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.buttons a {
+  padding: 14px 24px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: #2f3e56;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d283a;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #bbb;
+}
+
+.btn-tertiary {
+  background-color: transparent;
+  color: #2f3e56;
+  border: 2px solid #2f3e56;
+}
+
+.btn-tertiary:hover {
+  background-color: #446191;
+  color: white;
+}
+
+

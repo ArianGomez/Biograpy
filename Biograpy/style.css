@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.header {
+  height: 60vh;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #111;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.main-card {
+  background-color: #ffffff;
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.main-card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 30px 0 10px;
+  color: #111;
+}
+
+.button-list button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.button-list button:hover {
+  background-color: #555;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contact-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+.profile-pic-container {
+  position: absolute;
+  top: 22vh; /* ✔ Más arriba para encajar con el nuevo banner */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+
+
+.header {
+  width: 100%;
+  height: 30vh; /* antes probablemente tenías 60vh */
+  overflow: hidden;
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+
+.cta-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.pulse-button {
+  position: relative;
+  display: inline-block;
+  padding: 11px 38px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  background: #313030;
+  border: none;
+  border-radius: 500px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.pulse-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 4%,
+    rgb(61, 45, 233) 10%,
+    transparent 200%,
+    transparent 100%
+  );
+  animation: rotateGlow 4s linear infinite;
+  z-index: 1;
+  border-radius: 50%;
+  filter: blur(0px);
+}
+
+.pulse-button::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(50% - 4px);
+  height: calc(590% - 6px);
+  background: #484444;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.pulse-button span {
+  position: relative;
+  z-index: 9;
+  transition: color 0.4s ease-in-out;
+}
+
+.pulse-button:hover span {
+  color: rgb(47, 100, 232);
+}
+
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button-list a {
+  text-decoration: none;
+  display: block;
+}

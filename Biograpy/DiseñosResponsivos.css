@@ -1,0 +1,100 @@
+.carousel-section {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2f3e56;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-slide img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2f3e56;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  margin-top: 15px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #2f3e56;
+}
+
+/* Caja de descripción mejorada */
+.carousel-description-box {
+  background-color: #2f3e56;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 14px;
+  margin-top: 40px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.carousel-description-box h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.carousel-description-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+}
